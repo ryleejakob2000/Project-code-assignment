@@ -10,7 +10,7 @@
 <body>
 
 <header>
-    <h1>Breath of the Wild Lore: Characters</h1>
+    <h1>Breath of the Wild Lore: Locations</h1>
 </header>
 
 <nav>
@@ -22,39 +22,108 @@
     </ul>
 </nav>
 <main>
+
 <div class="slideshow">
 
-    <div class="slides">
-
-        <input type="radio" name="slide" id="s1" checked>
-        <div class="slide">
-            <img src="princess Zelda.webp" width="500">
-            <div class="slide-text">Description for slide 1.</div>
-        </div>
-
-        <input type="radio" name="slide" id="s2">
-        <div class="slide">
-            <img src="Link.webp" width="600">
-            <div class="slide-text">Description for slide 2.</div>
-        </div>
-
-        <input type="radio" name="slide" id="s3">
-        <div class="slide">
-            <img src="images/sample3.jpg" width="600">
-            <div class="slide-text">Description for slide 3.</div>
-        </div>
-
+    <div class="slide active">
+        <img src="breathofthewildmap.jpg">
+        <p class="caption">Princess Zelda is the Hylian Princess of Hyrule, she holds the triforce of Wisdom</p>
     </div>
 
-    <label for="s3" class="arrow left">&#10094;</label>
-    <label for="s2" class="arrow right">&#10095;</label>
+    <div class="slide">
+        <img src="BotW_Gerudo_Town.webp">
+        <p class="caption">Link</p>
+    </div>
+
+    <div class="slide">
+        <img src="Vah_Naboris.webp">
+        <p class="caption">Urbosa</p>
+    </div>
+
+    <div class="slide">
+        <img src="deathmountain.webp">
+        <p class="caption">Revali</p>
+    </div>
+
+    <div class="slide">
+        <img src="Vah_Rudania.webp">
+        <p class="caption">Daruk</p>
+    </div>
+
+    <div class="slide">
+        <img src="Zoras_Domain.jpg">
+        <p class="caption">Mipha is </p>
+    </div>
+
+    <div class="slide">
+        <img src="Vah_Ruta.webp">
+        <p class="caption">Mipha is </p>
+    </div>
+
+    <div class="slide">
+        <img src="Rito_village.png">
+        <p class="caption">Mipha is </p>
+    </div>
+
+    <div class="slide">
+        <img src="Vah_Medoh.png">
+        <p class="caption">Mipha is </p>
+    </div>
+
+    <!-- Arrows -->
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
 
 </div>
 
+<script>
+let current = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(n) {
+    slides[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+}
+
+function nextSlide() { showSlide(current + 1); }
+function prevSlide() { showSlide(current - 1); }
+</script>  
+
 </main>
 
+    <h1>Hello here is a header</h1>
+    <p>The legend of zelda information </p>
+
+            <table>
+                <tr>
+                    <th>Quick Facts</th>
+                    <th>Information</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr> 
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
 <footer>
-    <p>Breath of the Wild Lore Project</p>
+    <p>&copy; Locations page</p>
 </footer>
 
 </body>
