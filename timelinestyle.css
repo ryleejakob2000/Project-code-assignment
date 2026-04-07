@@ -1,3 +1,4 @@
+/* Global color variables */
 :root {
     --blue: #01B2E6;
     --gold: #FEB400;
@@ -6,26 +7,30 @@
     --bronze: #AF7806;
 }
 
+/* Full-height layout */
 html, body {
     height: 100%;
 }
 
+/* Flex column layout */
 body {
     display: flex;
     flex-direction: column;
 }
 
-/* Main content grows to fill space */
+/* Main content fills space */
 main {
     flex: 1;
 }
 
+/* Reset spacing + sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base body styling */
 body {
     font-family: Arial, sans-serif;
     background: var(--cream);
@@ -33,6 +38,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header styling */
 header {
     background: var(--blue);
     color: white;
@@ -40,15 +46,18 @@ header {
     text-align: center;
 }
 
+/* Nav background */
 nav {
     background: var(--gray);
 }
 
+/* Horizontal nav list */
 nav ul {
     display: flex;
     list-style: none;
 }
 
+/* Nav links */
 nav ul li a {
     color: var(--cream);
     padding: 14px 20px;
@@ -56,11 +65,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Nav hover effect */
 nav ul li a:hover {
     background: var(--gold);
     color: var(--gray);
 }
 
+/* Footer styling */
 footer {
     background: var(--blue);
     color: white;
@@ -69,6 +80,7 @@ footer {
     margin-top: 50px;
 }
 
+/* Slideshow container */
 .slideshow {
     width: 700px;
     height: 500px;
@@ -80,7 +92,7 @@ footer {
     color: #eee;
 }
 
-/* Each slide */
+/* Slide base */
 .slide {
     width: 100%;
     height: 100%;
@@ -89,11 +101,12 @@ footer {
     padding: 10px;
 }
 
+/* Visible slide */
 .slide.active {
     display: block;
 }
 
-/* Image stays inside box */
+/* Slide image */
 .slide img {
     width: 100%;
     height: 350px;
@@ -102,13 +115,13 @@ footer {
     border-radius: 8px;
 }
 
-/* Caption */
+/* Slide caption */
 .caption {
     margin-top: 10px;
     font-size: 1rem;
 }
 
-/* Arrows */
+/* Slideshow arrows */
 .arrow {
     position: absolute;
     top: 50%;
@@ -122,37 +135,47 @@ footer {
     border-radius: 50%;
 }
 
+/* Arrow positions */
 .arrow.left {
-    left: 30px; /* outside the slideshow */
+    left: 30px;
 }
 
 .arrow.right {
-    right: 30px; /* outside the slideshow */
+    right: 30px;
 }
 
+/* Arrow hover effect */
 .arrow:hover {
     background: rgba(255,255,255,0.5);
 }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-        table, th, td {
-            border: 1px solid #0c0303;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
+/* Table layout */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
 
+/* Table borders */
+table, th, td {
+    border: 3px solid #0c0303;
+}
+
+/* Table cell spacing */
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Side‑by‑side videos */
 .video-container {
     display: flex;
-    gap: 20px; /* Space between videos */
-    justify-content: center; /* Centers the videos horizontally */
+    gap: 20px;
+    justify-content: center;
 }
+
+/* Video sizing */
 .video-container video {
-    width: 48%; /* Ensures two videos fit side-by-side with a gap */
+    width: 48%;
     height: auto;
 }

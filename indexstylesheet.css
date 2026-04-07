@@ -1,3 +1,4 @@
+/* Global color variables */
 :root {
     --blue: #01B2E6;
     --gold: #FEB400;
@@ -6,26 +7,30 @@
     --bronze: #AF7806;
 }
 
+/* Full-height layout */
 html, body {
     height: 100%;
 }
 
+/* Flex column layout */
 body {
     display: flex;
     flex-direction: column;
 }
 
-/* Main content grows to fill space */
+/* Main content fills space */
 main {
     flex: 1;
 }
 
+/* Reset spacing + sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base body styling */
 body {
     font-family: Arial, sans-serif;
     background: var(--cream);
@@ -33,6 +38,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header styling */
 header {
     background: var(--blue);
     color: white;
@@ -40,15 +46,18 @@ header {
     text-align: center;
 }
 
+/* Nav background */
 nav {
     background: var(--gray);
 }
 
+/* Horizontal nav list */
 nav ul {
     display: flex;
     list-style: none;
 }
 
+/* Nav links */
 nav ul li a {
     color: var(--cream);
     padding: 14px 20px;
@@ -56,11 +65,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Nav hover effect */
 nav ul li a:hover {
     background: var(--gold);
     color: var(--gray);
 }
 
+/* Footer styling */
 footer {
     background: var(--blue);
     color: white;
@@ -69,23 +80,27 @@ footer {
     margin-top: 30px;
 }
 
+/* Home page padding + centering */
 .home-content {
     padding: 40px;
     text-align: center;
 }
 
+/* Intro text block */
 .intro {
     max-width: 700px;
     margin: 0 auto 40px auto;
     font-size: 1.2rem;
 }
 
+/* Feature layout */
 .features {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
+/* Feature card */
 .feature-box {
     background: white;
     border: 2px solid var(--bronze);
@@ -95,8 +110,10 @@ footer {
     transition: transform 0.2s;
 }
 
+/* Feature hover effect */
 .feature-box:hover {
     transform: scale(1.05);
     background: var(--gold);
     color: var(--gray);
 }
+
