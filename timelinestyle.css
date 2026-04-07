@@ -146,3 +146,13 @@ footer {
             padding: 8px;
             text-align: center;
         }
+
+.video-container {
+    display: flex;
+    gap: 20px; /* Space between videos */
+    justify-content: center; /* Centers the videos horizontally */
+}
+.video-container video {
+    width: 48%; /* Ensures two videos fit side-by-side with a gap */
+    height: auto;
+}

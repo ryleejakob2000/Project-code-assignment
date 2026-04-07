@@ -40,21 +40,23 @@ nav {
     background: var(--gray);
 }
 
+/* Grey background for navigation*/
+nav {
+    background: var(--gray);
+}
+
+/* Sets Navs horizontal to one another*/
 nav ul {
     display: flex;
     list-style: none;
 }
 
+/* Adds spacing and color to the nav buttons*/
 nav ul li a {
     color: var(--cream);
     padding: 14px 20px;
     display: block;
     text-decoration: none;
-}
-
-nav ul li a:hover {
-    background: var(--gold);
-    color: var(--gray);
 }
 
 footer {
@@ -137,9 +139,16 @@ footer {
             margin-top: 15px;
         }
         table, th, td {
-            border: 1px solid #0c0303;
+            border: 3px solid #0c0303;
         }
         th, td {
             padding: 8px;
             text-align: center;
         }
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh;           /* Sets height to full viewport for vertical centering */
+}

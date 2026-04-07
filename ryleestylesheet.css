@@ -13,9 +13,12 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--gray);
+    line-height: 1.6;
 }
 
-/* Main content grows to fill space */
 main {
     flex: 1;
 }
@@ -26,13 +29,6 @@ main {
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: var(--cream);
-    color: var(--gray);
-    line-height: 1.6;
-}
-
 header {
     background: var(--blue);
     color: white;
@@ -40,15 +36,18 @@ header {
     text-align: center;
 }
 
+/* Grey background for navigation*/
 nav {
     background: var(--gray);
 }
 
+/* Sets Navs horizontal to one another*/
 nav ul {
     display: flex;
     list-style: none;
 }
 
+/* Adds spacing and color to the nav buttons*/
 nav ul li a {
     color: var(--cream);
     padding: 14px 20px;
@@ -56,22 +55,17 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    background: var(--gold);
-    color: var(--gray);
-}
 
 footer {
     background: var(--blue);
     color: white;
     text-align: center;
     padding: 30px;
-    margin-top: 50px;
+    flex-shrink: 0;
 }
 
 .home-content {
-    min-height: 70vh; 
-    padding: 40px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -101,3 +95,5 @@ footer {
     background: var(--gold);
     color: var(--gray);
 }
+
+
